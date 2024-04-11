@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Libre+Caslon+Text:ital@1&family=Mooli&family=Open+Sans:wght@300&family=Pacifico&family=Permanent+Marker&family=Roboto:wght@300;400;500;900&display=swap");
+
+body {
+  font-family: roboto;
+}
+
+.card {
+  @apply bg-white w-1/3 rounded overflow-hidden my-7 shadow-xl relative;
+}
+
+.badge {
+  @apply font-mono bg-gray-200 text-black uppercase rounded text-xs font-bold p-1 absolute top-0 mt-1 p-1;
+}

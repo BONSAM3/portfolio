@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body class="font-roboto">
+    <div class="grid md:grid-cols-3">
+      <div class="md:col-span-1 md:flex md:justify-end">
+        <nav class="text-right">
+          <div class="flex justify-between items-center p-2">
+            <h1 class="text-2xl font-bold uppercase">
+              <a href="" class="text-gray-500 hover:text-gray-700">Food</a>
+            </h1>
+            <div class="cursor-pointer px-4 md:hidden" id="burger">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </div>
+          </div>
+          <ul class="text-sm mt-6 hidden md:block" id="menu">
+            <li class="py-1">
+              <a
+                href=""
+                class="flex justify-end px-3 gap-1 border-r-4 border-red-500"
+              >
+                <span>Home</span>
+                <svg
+                  class="w-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="text-gray-900 py-1">
+              <a
+                href=""
+                class="flex justify-end px-3 gap-1 border-r-4 border-white"
+              >
+                <span>About</span>
+                <svg
+                  class="w-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="py-1">
+              <a
+                href=""
+                class="text-sm flex justify-end px-3 gap-1 border-r-4 border-white"
+              >
+                <span>Contact</span>
+                <svg
+                  class="w-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H6.911a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <main class="px-16 py-6 h bg-gray-100 md:col-span-2">
+        <div class="flex justify-center md:justify-end gap-x-2 text-red-500">
+          <a
+            href=""
+            class="text-xs cursor-pointer border-red-200 md:border-2 rounded-full py-2 px-3 hover:bg-red-500 hover:text-white hover:border-none transition ease-out duration-500"
+            >log in</a
+          >
+          <a
+            href=""
+            class="text-xs cursor-pointer border-red-200 md:border-2 rounded-full py-2 px-3 hover:bg-red-500 hover:text-white hover:border-none transition ease-out duration-300"
+            >sign up</a
+          >
+        </div>
+        <header>
+          <h2 class="text-gray-900 text-6xl my-9">Recipes</h2>
+          <h3 class="text-2xl font-semibold mb-5">For Ninjas</h3>
+        </header>
+        <div>
+          <h4 class="">Latest Recipes</h4>
+          <div class="grid md:grid-cols-3 gap-5">
+            <div
+              class="bg-white w-1/ rounded overflow-hidden my-7 shadow-xl relative"
+            >
+              <img
+                src="pizza.jfif"
+                alt=""
+                class="w-full object-cover object-center"
+              />
+
+              <div class="p-2">
+                <span class="font-bold text-2xl">5 Bean Chilli Stew</span>
+                <span class="block text-gray-500">5 Bean Chilli Stew</span>
+              </div>
+              <div class="p-1">
+                <span
+                  class="font-mono bg-gray-200 text-black uppercase rounded-full text-xs font-bold p-1 absolute top-0 mt-1"
+                >
+                  <svg
+                    class="inline-block w-5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+
+                  25mins</span
+                >
+              </div>
+            </div>
+            <div
+              class="bg-white w-1/ rounded overflow-hidden my-7 shadow-xl relative"
+            >
+              <img
+                src="images.jfif"
+                alt=""
+                class="w-full object-cover object-center"
+              />
+              <div class="p-2">
+                <span class="font-bold text-2xl">5 Bean Chilli Stew</span>
+                <span class="block text-gray-500">5 Bean Chilli Stew</span>
+              </div>
+              <div class="p-1">
+                <span
+                  class="font-mono bg-gray-200 text-black uppercase rounded-full text-xs font-bold p-1 absolute top-0 mt-1 inline-block"
+                >
+                  <svg
+                    class="inline-block w-5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  25mins</span
+                >
+              </div>
+            </div>
+            <div
+              class="bg-white w-1/ rounded overflow-hidden my-7 shadow-xl relative"
+            >
+              <img
+                src="tofu.jpg"
+                alt=""
+                class="w-full object-cover object-center"
+              />
+              <div class="p-2">
+                <span class="font-bold text-2xl">5 Bean Chilli Stew</span>
+                <span class="block text-gray-500">5 Bean Chilli Stew</span>
+              </div>
+              <div class="p-1">
+                <span
+                  class="font-mono bg-gray-200 text-black uppercase rounded-full text-xs font-bold p-1 absolute top-0 mt-1"
+                >
+                  <svg
+                    class="inline-block w-5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  25mins</span
+                >
+              </div>
+            </div>
+          </div>
+          <h4>Most Popular</h4>
+          <div class="">
+            <div class="flex justify-center mt-6">
+              <div
+                class="rounded-full uppercase py-1 px-2 bg-red-200 text-xs cursor-pointer hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition ease-out duation-300"
+              >
+                Load More
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
